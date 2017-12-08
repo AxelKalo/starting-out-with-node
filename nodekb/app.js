@@ -15,6 +15,11 @@ app.get('/', function(req, res){
   });
 });
 
+app.get('/testing',function(req,res){
+  res.render('testing',{
+    title:'The test'
+  });
+});
 
 //Start Server
 app.listen(4567, function(){
